@@ -4,10 +4,8 @@
     --darker: #5c1333;
     --light: #f0448e;
     --white: #f6f6f6;
-    --grey: #a39da0;
     --yellow: #cec083;
     --cyan: #3ac6e5;
-    --tp: #c304577b;
 }
 
 * {
@@ -15,6 +13,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    outline: none;
 }
 
 html {
@@ -34,7 +33,7 @@ nav {
     z-index: 999;
 }
 
-label.logo a {
+nav label.logo a {
     color: var(--white);
     font-size: 35px;
     line-height: 8vh;
@@ -59,13 +58,18 @@ nav ul li a {
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    transition: all .4s ease-in;
 }
 
-a.active,
-a:hover {
-    background: var(--darker);
+nav ul li a:hover {
+    box-shadow: inset 300px 0 0 0 var(--light);
+    color: var(--darker);
+}
+
+nav ul li a > i,
+nav label a > i {
     color: var(--cyan);
-    transition: all .4s ease;
+    padding-right: 5px;
 }
 
 .checkbtn {
@@ -349,17 +353,52 @@ a:hover {
 
 /* end of recipe design */
 
+/* start of footer design */
+footer {
+    width: 100%;
+    overflow: hidden;
+    background: #29121c;
+}
 
+footer > div {
+    color: var(--white);
+    height: 100%;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+}
 
+footer > div div {
+    padding-bottom: 50px;
+    font-size: 24px;
+}
 
+footer .fa-youtube,
+footer .fa-facebook-f{
+    font-size: 40px;
+    color: var(--white);
+    transition: color .4s ease;
+}
 
+footer .fa-youtube:hover {
+    color: #e82b12;
+}
 
+footer .fa-facebook-f:hover {
+    color: rgb(17, 106, 229);
+}
 
+footer > div > span {
+    font-size: 20px;
+}
 
+footer > div > span a {
+    color: var(--cyan);
+}
 
-
-
-
+footer > div > span a:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -440,15 +479,13 @@ a:hover {
     nav ul li{
         display: block;
         margin: 15vh 0;
-        line-height: 8vh;
     }
 
     nav ul li a {
         font-size: 20px;
     }
 
-    a:hover,
-    a.active {
+    nav ul li a:hover {
         background: none;
         color: var(--cyan);
     }
@@ -508,11 +545,25 @@ a:hover {
     .about-container .about-content .about-img img {
         width: 250px;
     }
+
+    footer > div div {
+        font-size: 18px;
+    }
+    
+    footer .fa-youtube,
+    footer .fa-facebook-f{
+        font-size: 22px;
+    }
+
+    footer > div > span {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 645px) {
-    label.logo a {
-        font-size: 22px;
+    nav label.logo a {
+        font-size: 20px;
+        padding-left: 20px;
     }
 
     .checkbtn {
@@ -546,6 +597,7 @@ a:hover {
         margin-bottom: 50px;
     }
     .home-container .home-img img {
+        width: 250px;
         margin: 0 auto;
     }
 
@@ -561,6 +613,7 @@ a:hover {
     .about-container .about-content .about-img img {
         display: block;
         margin: 0 auto;
+        width: 200px;
     }
 
     .about-container .about-content .about-text{
@@ -570,18 +623,37 @@ a:hover {
     .about-container .about-content .about-text h2 {
         margin-bottom: -1.5rem;
     }
+
+    .about-container .about-content .about-text p {
+        /* padding: 1.rem ; */
+        padding-right: 3rem;
+        padding-left: 1.5rem;
+    }
     
     .about-container .about-content .about-text a {
         font-size: 16px;
-        margin: 4rem;
+        margin-left: 6%;
+    }
+
+    footer > div div {
+        font-size: 16px;
+    }
+    
+    footer .fa-youtube,
+    footer .fa-facebook-f{
+        font-size: 18px;
+    }
+
+    footer > div > span {
+        font-size: 12px;
     }
 
 }
 
 @media screen and (max-width: 380px) {
-    label.logo a {
+    nav label.logo a {
         font-size: 16px;
-        padding-left: 10px;
+        padding-left: 5px;
     }
 
     .home-container .home-text a {
