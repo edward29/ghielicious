@@ -41,18 +41,18 @@ nav label.logo a {
     font-weight: bold;
 }
 
-nav ul {
+nav .nav-links {
     float: right;
     margin-right: 20px;
 }
 
-nav ul li {
+nav .nav-links li {
     display: inline-block;
     line-height: 8vh;
     margin: 0 5px;
 }
 
-nav ul li a {
+nav .nav-links li a {
     color: var(--white);
     font-size: 17px;
     padding: 7px 13px;
@@ -61,12 +61,12 @@ nav ul li a {
     transition: all .4s ease-in;
 }
 
-nav ul li a:hover {
+nav .nav-links li a:hover {
     box-shadow: inset 300px 0 0 0 var(--light);
     color: var(--darker);
 }
 
-nav ul li a > i,
+nav .nav-links li a > i,
 nav label a > i {
     color: var(--cyan);
     padding-right: 5px;
@@ -453,7 +453,7 @@ footer > div > span a:hover {
         padding-left: 50px;
     }
 
-    nav ul li a {
+    nav .nav-links li a {
         font-size: 16px;
     }
 
@@ -462,36 +462,38 @@ footer > div > span a:hover {
 @media (max-width: 858px){
     .checkbtn {
         display: block;
+        padding-top: 10px;
     }
 
-    ul {
+    nav .nav-links {
         position: fixed;
-        width: 100%;
+        width: 50%;
         height: 100vh;
+        margin-right: 0;
         background: var(--light);
         top: 8vh;
-        left: -100%;
+        right: -100%;
         text-align: center;
         z-index: 999;
         transition: all .4s ease-in;
     }
 
-    nav ul li{
+    nav .nav-links li{
         display: block;
         margin: 15vh 0;
     }
 
-    nav ul li a {
+    nav .nav-links li a {
         font-size: 20px;
     }
 
-    nav ul li a:hover {
+    nav .nav-links li a:hover {
         background: none;
         color: var(--cyan);
     }
 
-    #check:checked ~ ul {
-        left: 0;
+    #check:checked ~ .nav-links {
+        right: 0;
     }
 
     .home-container .home-text h1{
@@ -625,7 +627,6 @@ footer > div > span a:hover {
     }
 
     .about-container .about-content .about-text p {
-        /* padding: 1.rem ; */
         padding-right: 3rem;
         padding-left: 1.5rem;
     }
