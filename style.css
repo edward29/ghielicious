@@ -1,12 +1,12 @@
 :root {
-    --main-color: #c91362;
-    --dark: #8a1e4d;
-    --darker: #5c1333;
-    --light: #f0448e;
+    --main-color: #0bef8d;
+    --dark: #237954;
+    --darker: #0c2f1f;
+    --light: #7cf3bf;
     --white: #f6f6f6;
     --yellow: #cec083;
-    --cyan: #3ac6e5;
-    --tp: #c913628d;
+    --blue: #16a8e7;
+    --tp: #5df1b15e;
 }
 
 * {
@@ -15,6 +15,7 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
+    list-style: none;
 }
 
 html {
@@ -69,7 +70,7 @@ nav .nav-links li a:hover {
 
 nav .nav-links li a > i,
 nav label a > i {
-    color: var(--cyan);
+    color: var(--main-color);
     padding-right: 5px;
 }
 
@@ -133,8 +134,8 @@ nav label a > i {
     font-size: 32px;
     font-weight: 600;
     color: var(--darker);
-    border: 2px solid var(--cyan);
-    background: var(--cyan);
+    border: 2px solid var(--blue);
+    background: var(--blue);
     padding: 10px 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -256,8 +257,8 @@ nav label a > i {
 }
 
 .about-container .about-content .about-text a:hover {
-    box-shadow: inset 300px 0 0 0 var(--cyan);
-    border: 2px solid var(--cyan);
+    box-shadow: inset 300px 0 0 0 var(--blue);
+    border: 2px solid var(--blue);
 }
 
 /* end of about design */
@@ -292,6 +293,16 @@ nav label a > i {
     margin: 30px auto;
 }
 
+.recipe-container #searchInput {
+    width: 300px;
+    float: right;
+    margin-right: 3%;
+    font-size: 100%;
+    background: var(--light);
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .recipe-container .recipe-images {
     width: 100%;
     display: flex;
@@ -304,10 +315,15 @@ nav label a > i {
     margin: 30px 20px;
     border-radius: 20px;
     background: var(--dark);
-    box-shadow: 5px 5px 15px var(--light), 
-    -5px 5px 15px var(--light),
-    5px -5px 15px var(--light),
-    -5px -5px 15px var(--light);
+    box-shadow: 2px 2px 5px var(--light),
+    -2px -2px 5px var(--light);
+    transition: all .4s ease;
+}
+
+.recipe-container .recipe-images .images-container:hover{
+    transform: translateY(-10px);
+    box-shadow: -10px 15px 15px var(--light),
+    10px 15px 15px var(--light);
 }
 
 .recipe-container .recipe-images .images-container img{
@@ -335,8 +351,8 @@ nav label a > i {
     font-size: 18px;
     font-weight: 600;
     color: var(--darker);
-    border: 2px solid var(--cyan);
-    background: var(--cyan);
+    border: 2px solid var(--blue);
+    background: var(--blue);
     padding: 10px 20px;
     margin: 10px 20px;
     letter-spacing: 2px;
@@ -359,15 +375,17 @@ nav label a > i {
     display: none;
     position: absolute;
     width: 100%;
-    height: auto;
+    cursor: pointer;
     background: var(--tp);
+    z-index: 99;
 }
 
 .details-container .full-details {
     width: 50%;
     height: auto;
-    margin: 30vh auto;
+    margin: 10vh auto;
     background: var(--darker);
+    overflow: hidden;
     border-radius: 20px;
 }
 
@@ -407,7 +425,7 @@ nav label a > i {
 }
 
 .details-container .full-details .close-btn {
-    background: var(--cyan);
+    background: var(--blue);
     color: var(--dark);
     text-align: center;
     font-size: 30px;
@@ -463,7 +481,7 @@ footer > div > span {
 }
 
 footer > div > span a {
-    color: var(--cyan);
+    color: var(--blue);
 }
 
 footer > div > span a:hover {
@@ -532,7 +550,7 @@ footer > div > span a:hover {
 @media (max-width: 858px){
     .checkbtn {
         display: block;
-        padding-top: 10px;
+        padding-top: 12px;
     }
 
     nav .nav-links {
@@ -559,7 +577,7 @@ footer > div > span a:hover {
 
     nav .nav-links li a:hover {
         background: none;
-        color: var(--cyan);
+        color: var(--blue);
     }
 
     #check:checked ~ .nav-links {
@@ -622,7 +640,7 @@ footer > div > span a:hover {
         width: 80%;
     }
 
-    
+
 
     footer > div div {
         font-size: 18px;

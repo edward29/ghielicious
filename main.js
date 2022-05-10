@@ -112,3 +112,23 @@ close.addEventListener("click", () => {
     console.log('close');
 })
 // end of recipe script
+
+// start of search script
+function search() {
+    let h2, txtValue;
+    const input = document.querySelector("#searchInput");
+    const filter = input.value.toUpperCase();
+    const ul = document.getElementById("myUL");
+    const li = ul.getElementsByTagName("li");
+    for (let i = 0; i < li.length; i++) {
+        h2 = li[i].querySelectorAll(".names")[0];
+        txtValue = h2.textContent || h2.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+// end of search script
