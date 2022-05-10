@@ -6,6 +6,7 @@
     --white: #f6f6f6;
     --yellow: #cec083;
     --cyan: #3ac6e5;
+    --tp: #c913628d;
 }
 
 * {
@@ -347,11 +348,80 @@ nav label a > i {
 }
 
 .recipe-container .recipe-images .images-container > div:hover {
-    box-shadow: inset 300px 0 0 0 var(--main-color);
+    box-shadow: inset 260px 0 0 0 var(--main-color);
     border: 2px solid var(--main-color);
 }
 
 /* end of recipe design */
+
+/* start of  details design */
+.details-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: var(--tp);
+}
+
+.details-container .full-details {
+    width: 50%;
+    height: auto;
+    margin: 30vh auto;
+    background: var(--darker);
+    border-radius: 20px;
+}
+
+.details-container .full-details .img-con img{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    padding: 36px;
+    border-radius: 20%;
+}
+
+.details-container .full-details .instruction {
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-align: justify;
+    width: 80%;
+    margin: 50px auto 20px;
+    color: var(--white);
+}
+
+.details-container .full-details .ingredients {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.details-container .full-details h2 {
+    color: var(--light);
+    padding-bottom: 10px;
+}
+
+.details-container .full-details .instruction p,
+.details-container .full-details .ingredients p {
+    padding-left: 20px;
+}
+
+.details-container .full-details .close-btn {
+    background: var(--cyan);
+    color: var(--dark);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+
+.details-container .full-details .close-btn:hover {
+    box-shadow: inset 0 35px 0 0 var(--light);
+}
+
 
 /* start of footer design */
 footer {
@@ -399,7 +469,7 @@ footer > div > span a {
 footer > div > span a:hover {
     text-decoration: underline;
 }
-
+/* end of footer desing */
 
 
 /* start of resposive */
