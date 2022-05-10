@@ -618,6 +618,12 @@ footer > div > span a:hover {
         width: 250px;
     }
 
+    .details-container .full-details {
+        width: 80%;
+    }
+
+    
+
     footer > div div {
         font-size: 18px;
     }
@@ -728,6 +734,10 @@ footer > div > span a:hover {
 @media screen and (max-width: 426px){
     .home-container .home-text a {
         margin-left: 30%;
+    }
+
+    .details-container .full-details .img-con img{
+        width: 250px;
     }
 }
 
