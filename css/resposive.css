@@ -1,0 +1,277 @@
+@media screen and (max-width: 1230px) {
+
+    .home-container .home-text h1{
+        font-size: 30px;
+    }
+
+    .home-container .home-text span {
+        font-size: 38px;
+    }
+
+    .home-container .home-text a{
+        font-size: 22px;
+        margin-left: 28%;
+    }
+
+    .about-container .about-content .about-img img {
+        width: 350px;
+        margin: 10rem 0 10rem 5rem;
+    }
+
+    .home-container .home-img img{
+        width: 400px;
+    }
+
+    .about-container .about-content .about-text h2 {
+        font-size: 32px;
+        color: var(--dark);
+        padding: 30px 0 0;
+        margin-top: 10px;
+        margin-bottom: .5rem;
+    }
+
+    .about-container .about-content .about-text p {
+        font-size: 18px;
+    }
+    
+    .about-container .about-content .about-text a {
+        font-size: 22px;
+        margin-left: 28%;
+    }
+
+}
+
+@media (max-width: 952px) {
+    label.logo a{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav .nav-links li a {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+        padding-top: 14px;
+    }
+
+    nav .nav-links {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        margin-right: 0;
+        background: var(--dark);
+        top: 8vh;
+        right: -100%;
+        text-align: center;
+        z-index: 999;
+        transition: all .4s ease-in;
+    }
+
+    nav .nav-links li{
+        display: block;
+        margin: 15vh 0;
+    }
+
+    nav .nav-links li a {
+        font-size: 20px;
+    }
+
+    nav .nav-links li a:hover {
+        background: none;
+        color: var(--blue);
+    }
+
+    #check:checked ~ .nav-links {
+        right: 0;
+    }
+
+    .home-container .home-text h1{
+        font-size: 28px;
+    }
+
+    .home-container .home-text span {
+        font-size: 30px;
+    }
+
+    .home-container .home-text h1 p{
+        font-size: 14px;
+    }
+
+    .home-container .home-text a{
+        font-size: 16px;
+    }
+
+    .home-container .home-img img {
+        width: 300px;
+        margin-left: 10%;
+        margin-bottom: 30px;
+    }
+
+    .about-container .about-content .about-img img {
+        width: 300px;
+        margin: 10rem 0 10rem 2rem;
+    }
+
+    .about-container .about-content .about-text h2 {
+        font-size: 24px;
+        color: var(--dark);
+        padding: 30px 0 0;
+        margin-top: 10px;
+        margin-bottom: .5rem;
+    }
+
+    .about-container .about-content .about-text p {
+        font-size: 16px;
+    }
+    
+    .about-container .about-content .about-text a {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .home-container .home-img img{
+        margin-left: -20px;
+    }
+
+    .about-container .about-content .about-img img {
+        width: 250px;
+    }
+
+    .details-container .full-details {
+        width: 80%;
+    }
+
+    footer > div div {
+        font-size: 18px;
+    }
+    
+    footer .fa-youtube,
+    footer .fa-facebook-f{
+        font-size: 22px;
+    }
+
+    footer > div > span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    nav label.logo a {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .checkbtn {
+        font-size: 22px;
+    }
+
+    .home-container{
+        flex-wrap: wrap;
+    }
+
+    .home-container .home-text{
+        width: 100%;
+        margin: 200px 0 50px;
+    }
+
+    .home-container .home-text h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .home-container .home-text h1 p{
+        font-size: 14px;
+    }
+
+    .home-container .home-text a {
+        margin-left: 37%;
+    }
+
+    .home-container .home-img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .home-container .home-img img {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .about-container .about-content {
+        flex-wrap: wrap;
+    }
+
+    .about-container .about-content .about-img {
+        width: 100%;
+        margin: 50px auto 10px;
+    }
+    
+    .about-container .about-content .about-img img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    .about-container .about-content .about-text{
+        width: 100%;
+    }
+
+    .about-container .about-content .about-text h2 {
+        margin-bottom: -1.5rem;
+    }
+
+    .about-container .about-content .about-text p:nth-child(2),
+    .about-container .about-content .about-text p:nth-child(3) {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    
+    .about-container .about-content .about-text a {
+        font-size: 16px;
+        margin-left: 6%;
+    }
+
+    .recipe-container .recipe-text div {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    footer > div div {
+        font-size: 16px;
+    }
+    
+    footer .fa-youtube,
+    footer .fa-facebook-f{
+        font-size: 18px;
+    }
+
+    footer > div > span {
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width: 426px){
+    .home-container .home-text a {
+        margin-left: 30%;
+    }
+
+    .details-container .full-details .img-con img{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    nav label.logo a {
+        font-size: 16px;
+        padding-left: 5px;
+    }
+
+    .home-container .home-text a {
+        margin-left: 26%;
+    }
+}
+
