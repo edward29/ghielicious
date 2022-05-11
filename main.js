@@ -1,4 +1,4 @@
-var loader = document.querySelector(".loader");
+const loader = document.querySelector(".loader");
 window.addEventListener('load', disapperIt);
 
 function disapperIt() {

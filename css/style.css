@@ -46,7 +46,7 @@ body{
 }
 
 .disappear {
-    animation: hide 1s infinite linear;
+    animation: hide 1s forwards;
 }
 
 @keyframes hide {
