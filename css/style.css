@@ -54,11 +54,6 @@ body{
         opacity: 0;
         visibility: hidden;
     }
-
-    0% {
-        opacity: 1;
-        visibility: hidden;
-    }
 }
 
 

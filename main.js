@@ -5,8 +5,6 @@ function disapperIt() {
     loader.classList.add("disappear");
 }
 
-
-
     // start of burger menu script
     const check = document.querySelector('#check');
     const iconBars = document.querySelector('#iconBars');
@@ -33,9 +31,7 @@ function disapperIt() {
         });
     }
 
-
     // end of menu script
-
 
     // start of recipe script
     const detailsCon = document.querySelector(".details-container");
